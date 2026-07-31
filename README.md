@@ -3,7 +3,7 @@
 Static website for **IBO Lab — Intelligence for Biological Omics**.
 
 The site uses separate static pages for Home, Research, Team, Publications,
-Data & Code, News, Media, Join Us, and Lab Life.
+Data & Code, News, Media, Contact, and Lab Life.
 
 ## Preview locally
 
