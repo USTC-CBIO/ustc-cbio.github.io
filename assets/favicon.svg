@@ -5,5 +5,5 @@
     <circle cx="42" cy="18" r="5"/>
     <circle cx="43" cy="46" r="6"/>
   </g>
-  <path d="M27 28.5 37 21.5M27 36l10 7M42.5 23v17" fill="none" stroke="#f07868" stroke-width="2"/>
+  <path d="M27 28.5 37 21.5M27 36l10 7M42.5 23v17" fill="none" stroke="#2caed0" stroke-width="2"/>
 </svg>
