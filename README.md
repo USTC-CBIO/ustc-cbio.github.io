@@ -1,6 +1,6 @@
 # IBO Lab website
 
-Static bilingual website for **IBO Lab — Intelligence for Biological Omics**.
+Static website for **IBO Lab — Intelligence for Biological Omics**.
 
 ## Preview locally
 
@@ -22,7 +22,7 @@ Search the project for these placeholders:
 - news placeholder titles
 - team photo placeholder
 
-The English/Chinese copy is in `index.html` and `script.js`.
+Homepage copy and links are in `index.html`. Carousel behavior is in `script.js`.
 
 ## Deploy to GitHub Pages
 
