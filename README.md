@@ -2,6 +2,9 @@
 
 Static website for **IBO Lab — Intelligence for Biological Omics**.
 
+The site uses separate static pages for Home, Research, Team, Publications,
+Data & Code, News, Media, Join Us, and Lab Life.
+
 ## Preview locally
 
 No build step is required. From this directory, run:
@@ -22,7 +25,9 @@ Search the project for these placeholders:
 - news placeholder titles
 - team photo placeholder
 
-Homepage copy and links are in `index.html`. Carousel behavior is in `script.js`.
+Homepage copy and links are in `index.html`. Each navigation item has its own
+HTML file. Shared visual styles are in `styles.css`, and shared navigation/
+carousel behavior is in `script.js`.
 
 ## Deploy to GitHub Pages
 
