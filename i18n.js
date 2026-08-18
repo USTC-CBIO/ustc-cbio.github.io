@@ -596,6 +596,7 @@
 
   function updateTextNodes(language) {
     document.querySelectorAll("[data-i18n]").forEach((node) => {
+      if (node.hasAttribute("data-i18n-attr")) return;
       const key = node.getAttribute("data-i18n");
       if (!key) return;
       const value = resolveTranslation(key, null, language);

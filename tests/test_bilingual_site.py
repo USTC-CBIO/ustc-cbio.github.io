@@ -44,6 +44,17 @@ class BilingualSiteContractTests(unittest.TestCase):
         team_runtime = (ROOT / "team.js").read_text(encoding="utf-8")
         self.assertIn('event.target.closest("[data-language-toggle]")', team_runtime)
 
+    def test_attribute_markers_do_not_replace_nested_header_dom(self):
+        runtime = (ROOT / "i18n.js").read_text(encoding="utf-8")
+        self.assertIn('if (node.hasAttribute("data-i18n-attr")) return;', runtime)
+
+    def test_pages_use_the_current_logo_favicon(self):
+        styles = (ROOT / "styles.css").read_text(encoding="utf-8")
+        self.assertIn('assets/cbio-lab-logo.png', styles)
+        for page_name in PAGES:
+            content = (ROOT / page_name).read_text(encoding="utf-8")
+            self.assertIn('assets/cbio-lab-favicon.png', content, page_name)
+
 
 if __name__ == "__main__":
     unittest.main()
