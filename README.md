@@ -1,6 +1,6 @@
-# IBO Lab website
+# CBIO Lab website
 
-Static website for **IBO Lab — Intelligence for Biological Omics**.
+Static website for **CBIO Lab — Computational Biology and Intelligent Omics**.
 
 The site uses separate static pages for Home, Research, Team, Publications,
 Data & Code, News, Media, Contact.

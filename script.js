@@ -1,8 +1,8 @@
 const slides = [...document.querySelectorAll(".hero-slide")];
 const credits = [
-  "Spatial omics · IBO Lab",
-  "Single-cell landscape · IBO Lab",
-  "Biological intelligence · IBO Lab"
+  "Spatial transcriptomics · CBIO Lab",
+  "Single-cell omics · CBIO Lab",
+  "3D spatial reconstruction · CBIO Lab"
 ];
 const credit = document.querySelector("[data-credit]");
 let slide = 0;
