@@ -11,6 +11,7 @@ PAGES = (
     "data-code.html",
     "news.html",
     "media.html",
+    "media-talk.html",
     "contact.html",
 )
 
@@ -54,6 +55,25 @@ class BilingualSiteContractTests(unittest.TestCase):
         for page_name in PAGES:
             content = (ROOT / page_name).read_text(encoding="utf-8")
             self.assertIn('assets/cbio-lab-favicon.png', content, page_name)
+
+    def test_media_home_uses_featured_and_empty_card_layout(self):
+        media = (ROOT / "media.html").read_text(encoding="utf-8")
+        self.assertIn('class="media-feature-grid"', media)
+        self.assertIn('href="media-talk.html"', media)
+        self.assertIn('class="media-feature-card media-feature-card--empty"', media)
+        self.assertIn('class="media-mini-grid"', media)
+
+    def test_media_talk_page_embeds_the_requested_bilibili_video(self):
+        detail_path = ROOT / "media-talk.html"
+        self.assertTrue(detail_path.exists(), "media-talk.html should be created")
+        if not detail_path.exists():
+            return
+        detail = detail_path.read_text(encoding="utf-8")
+        runtime = (ROOT / "i18n.js").read_text(encoding="utf-8")
+        self.assertIn('data-page="mediaTalk"', detail)
+        self.assertIn('class="video-frame"', detail)
+        self.assertIn('player.bilibili.com/player.html?isOutside=true&amp;aid=117115101185979&amp;bvid=BV1b6b66uEZM&amp;cid=41019245559&amp;p=1', detail)
+        self.assertIn('"media-talk.html": "mediaTalk"', runtime)
 
 
 if __name__ == "__main__":

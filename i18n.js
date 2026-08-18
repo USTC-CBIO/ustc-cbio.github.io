@@ -12,6 +12,7 @@
     "data-code.html": "dataCode",
     "news.html": "news",
     "media.html": "media",
+    "media-talk.html": "mediaTalk",
     "contact.html": "contact"
   };
 
@@ -25,6 +26,7 @@
         dataCode: "Data & Code | CBIO Lab",
         news: "News | CBIO Lab",
         media: "Media | CBIO Lab",
+        mediaTalk: "Academic talk | CBIO Lab",
         contact: "Contact | CBIO Lab"
       },
       common: {
@@ -232,9 +234,30 @@
           heading: "CBIO in the world",
           body: "Use this page to make complex research approachable and to collect public-facing conversations about the lab’s work."
         },
+        latest: {
+          heading: "Latest media",
+          body: "Watch the newest public-facing conversations from the lab."
+        },
+        more: {
+          heading: "More from the lab",
+          body: "New stories, interviews, and explainers will appear here."
+        },
+        empty: {
+          label: "Coming soon",
+          title: "A new story is taking shape",
+          body: "This space is ready for the next public-facing piece from CBIO Lab.",
+          link: "Coming soon"
+        },
+        detail: {
+          eyebrow: "CBIO LAB · ACADEMIC TALK",
+          title: "Research talk or seminar",
+          body: "Watch a CBIO Lab academic report, seminar, or invited lecture.",
+          backLink: "← Back to media",
+          videoTitle: "CBIO Lab academic report video"
+        },
         items: {
           talkTitle: "Research talk or seminar",
-          talkBody: "Add a video recording, conference presentation, or invited lecture.",
+          talkBody: "An academic report, seminar, or invited lecture from CBIO Lab.",
           talkLink: "Watch video →",
           pressTitle: "Press coverage",
           pressBody: "Link to a feature about a new result, collaboration, or lab milestone.",
@@ -280,6 +303,7 @@
         dataCode: "数据与代码 | CBIO Lab",
         news: "新闻动态 | CBIO Lab",
         media: "媒体内容 | CBIO Lab",
+        mediaTalk: "学术报告 | CBIO Lab",
         contact: "联系 | CBIO Lab"
       },
       common: {
@@ -487,9 +511,30 @@
           heading: "走向公众的 CBIO",
           body: "用这个页面让复杂研究更易理解，并汇集关于实验室工作的对外交流内容。"
         },
+        latest: {
+          heading: "最新媒体内容",
+          body: "观看实验室最新公开的交流内容。"
+        },
+        more: {
+          heading: "实验室更多内容",
+          body: "新的故事、访谈和科普解读将在这里发布。"
+        },
+        empty: {
+          label: "即将推出",
+          title: "新的故事正在准备中",
+          body: "这里将承载 CBIO Lab 下一篇面向公众的内容。",
+          link: "即将推出"
+        },
+        detail: {
+          eyebrow: "CBIO LAB · 学术报告",
+          title: "研究报告或学术讲座",
+          body: "观看 CBIO Lab 的学术报告、研讨会或受邀演讲。",
+          backLink: "← 返回媒体内容",
+          videoTitle: "CBIO Lab 学术报告视频"
+        },
         items: {
           talkTitle: "研究报告或学术讲座",
-          talkBody: "添加视频录播、会议报告或受邀演讲。",
+          talkBody: "来自 CBIO Lab 的学术报告、研讨会或受邀演讲。",
           talkLink: "观看视频 →",
           pressTitle: "媒体报道",
           pressBody: "链接到关于新成果、合作项目或实验室里程碑的报道。",
