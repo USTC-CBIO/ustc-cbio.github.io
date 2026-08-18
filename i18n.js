@@ -26,7 +26,7 @@
         dataCode: "Data & Code | CBIO Lab",
         news: "News | CBIO Lab",
         media: "Media | CBIO Lab",
-        mediaTalk: "Academic talk | CBIO Lab",
+        mediaTalk: "Evo 2 paper reading | CBIO Lab",
         contact: "Contact | CBIO Lab"
       },
       common: {
@@ -249,15 +249,15 @@
           link: "Coming soon"
         },
         detail: {
-          eyebrow: "CBIO LAB · ACADEMIC TALK",
-          title: "Research talk or seminar",
-          body: "Watch a CBIO Lab academic report, seminar, or invited lecture.",
+          eyebrow: "CBIO LAB · PAPER READING #01",
+          title: "【Paper Reading #01 | Nature】Evo 2: Genome Modeling and Design across the Tree of Life",
+          body: "This paper reading focuses on the Nature paper Evo 2, a foundation model for genome modeling and design across the tree of life. The talk introduces how Evo 2 learns general principles from large-scale genomic sequences across species and domains, enabling both genome understanding and the design of novel biological sequences.",
           backLink: "← Back to media",
-          videoTitle: "CBIO Lab academic report video"
+          videoTitle: "Evo 2 paper reading video"
         },
         items: {
-          talkTitle: "Research talk or seminar",
-          talkBody: "An academic report, seminar, or invited lecture from CBIO Lab.",
+          talkTitle: "【Paper Reading #01 | Nature】Evo 2: Genome Modeling and Design across the Tree of Life",
+          talkBody: "This paper reading focuses on the Nature paper Evo 2, a foundation model for genome modeling and design across the tree of life. The talk introduces how Evo 2 learns general principles from large-scale genomic sequences across species and domains, enabling both genome understanding and the design of novel biological sequences.",
           talkLink: "Watch video →",
           pressTitle: "Press coverage",
           pressBody: "Link to a feature about a new result, collaboration, or lab milestone.",
@@ -303,7 +303,7 @@
         dataCode: "数据与代码 | CBIO Lab",
         news: "新闻动态 | CBIO Lab",
         media: "媒体内容 | CBIO Lab",
-        mediaTalk: "学术报告 | CBIO Lab",
+        mediaTalk: "论文精读 #01 | Evo 2 | CBIO Lab",
         contact: "联系 | CBIO Lab"
       },
       common: {
@@ -526,15 +526,15 @@
           link: "即将推出"
         },
         detail: {
-          eyebrow: "CBIO LAB · 学术报告",
-          title: "研究报告或学术讲座",
-          body: "观看 CBIO Lab 的学术报告、研讨会或受邀演讲。",
+          eyebrow: "CBIO LAB · 论文精读 #01",
+          title: "【论文精读 #01｜Nature】Evo 2：跨生命域基因组建模与设计",
+          body: "本期论文精读聚焦 Nature 论文《Evo 2》：一种面向跨生命域基因组建模与设计的基础模型。视频将介绍 Evo 2 如何从大规模基因组序列中学习跨物种、跨生命域的规律，并进一步支持基因组理解与新生物序列设计。",
           backLink: "← 返回媒体内容",
-          videoTitle: "CBIO Lab 学术报告视频"
+          videoTitle: "Evo 2 论文精读视频"
         },
         items: {
-          talkTitle: "研究报告或学术讲座",
-          talkBody: "来自 CBIO Lab 的学术报告、研讨会或受邀演讲。",
+          talkTitle: "【论文精读 #01｜Nature】Evo 2：跨生命域基因组建模与设计",
+          talkBody: "本期论文精读聚焦 Nature 论文《Evo 2》：一种面向跨生命域基因组建模与设计的基础模型。视频将介绍 Evo 2 如何从大规模基因组序列中学习跨物种、跨生命域的规律，并进一步支持基因组理解与新生物序列设计。",
           talkLink: "观看视频 →",
           pressTitle: "媒体报道",
           pressBody: "链接到关于新成果、合作项目或实验室里程碑的报道。",

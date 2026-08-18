@@ -75,6 +75,12 @@ class BilingualSiteContractTests(unittest.TestCase):
         self.assertIn('player.bilibili.com/player.html?isOutside=true&amp;aid=117115101185979&amp;bvid=BV1b6b66uEZM&amp;cid=41019245559&amp;p=1', detail)
         self.assertIn('"media-talk.html": "mediaTalk"', runtime)
 
+    def test_media_talk_uses_the_evo2_paper_reading_copy(self):
+        runtime = (ROOT / "i18n.js").read_text(encoding="utf-8")
+        self.assertIn("【论文精读 #01｜Nature】Evo 2：跨生命域基因组建模与设计", runtime)
+        self.assertIn("本期论文精读聚焦 Nature 论文《Evo 2》", runtime)
+        self.assertIn("This paper reading focuses on the Nature paper Evo 2", runtime)
+
 
 if __name__ == "__main__":
     unittest.main()
