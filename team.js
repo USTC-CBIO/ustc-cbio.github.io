@@ -222,6 +222,7 @@
   });
 
   document.addEventListener("click", (event) => {
+    if (event.target.closest("[data-language-toggle]")) return;
     if (selectedId && !event.target.closest("[data-team-stage]")) clearSelection();
   });
 

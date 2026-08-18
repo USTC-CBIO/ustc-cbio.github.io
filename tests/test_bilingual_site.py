@@ -40,6 +40,10 @@ class BilingualSiteContractTests(unittest.TestCase):
         for project in ("stPainter", "DeepSpatial", "DriftST"):
             self.assertIn(project, corpus)
 
+    def test_team_language_toggle_preserves_selected_profile_contract(self):
+        team_runtime = (ROOT / "team.js").read_text(encoding="utf-8")
+        self.assertIn('event.target.closest("[data-language-toggle]")', team_runtime)
+
 
 if __name__ == "__main__":
     unittest.main()
