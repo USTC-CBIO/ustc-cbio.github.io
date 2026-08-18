@@ -124,6 +124,7 @@
         future: {
           heading: "Future directions",
           body: "Our next projects extend spatial omics through multimodal learning, benchmark development, and richer tissue modeling.",
+          openAriaLabel: "Open future direction",
           multimodalMeta: "Multimodal learning",
           multimodalTitle: "Aligning spatial omics with histology and other molecular modalities",
           multiomicsMeta: "Spatial multi-omics",
@@ -378,6 +379,7 @@
         future: {
           heading: "未来方向",
           body: "我们的下一批项目将通过多模态学习、基准构建和更丰富的组织建模来推进空间组学。",
+          openAriaLabel: "打开未来方向",
           multimodalMeta: "多模态学习",
           multimodalTitle: "将空间组学与组织学及其他分子模态对齐",
           multiomicsMeta: "空间多组学",
