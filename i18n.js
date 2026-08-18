@@ -51,11 +51,10 @@
           contact: "Contact"
         },
         footer: {
-          tagline: "Computational Biology and Intelligent Omics",
           exploreTitle: "Explore",
           linksTitle: "Friendly links",
           linksAriaLabel: "Friendly links",
-          cogskl: "iFLYTEK Cognitive Skills Lab",
+          cogskl: "National Key Laboratory of Cognitive Intelligence",
           ustc: "University of Science and Technology of China",
           note: "Built around meaningful biological questions."
         },
@@ -334,11 +333,10 @@
           contact: "联系"
         },
         footer: {
-          tagline: "计算生物学与智能组学",
           exploreTitle: "探索",
           linksTitle: "友情链接",
           linksAriaLabel: "友情链接",
-          cogskl: "科大讯飞认知智能实验室",
+          cogskl: "认知智能全国重点实验室",
           ustc: "中国科学技术大学",
           note: "从有意义的生物学问题出发。"
         },

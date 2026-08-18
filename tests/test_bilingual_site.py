@@ -85,6 +85,8 @@ class BilingualSiteContractTests(unittest.TestCase):
         runtime = (ROOT / "i18n.js").read_text(encoding="utf-8")
         self.assertIn('linksTitle: "Friendly links"', runtime)
         self.assertIn('linksTitle: "友情链接"', runtime)
+        self.assertIn('cogskl: "National Key Laboratory of Cognitive Intelligence"', runtime)
+        self.assertIn('cogskl: "认知智能全国重点实验室"', runtime)
         corpus = "\n".join((ROOT / page).read_text(encoding="utf-8") for page in PAGES)
         self.assertIn("https://cogskl.iflytek.com/", corpus)
         self.assertIn("https://www.ustc.edu.cn/", corpus)
@@ -92,6 +94,9 @@ class BilingualSiteContractTests(unittest.TestCase):
             content = (ROOT / page_name).read_text(encoding="utf-8")
             self.assertIn('class="site-footer"', content, page_name)
             self.assertIn('class="footer-links"', content, page_name)
+            self.assertIn('class="footer-brand-logo"', content, page_name)
+            self.assertIn('src="assets/cbio-lab-logo.png"', content, page_name)
+            self.assertNotIn('data-i18n="common.footer.tagline"', content, page_name)
             self.assertIn('target="_blank"', content, page_name)
 
 
