@@ -81,6 +81,19 @@ class BilingualSiteContractTests(unittest.TestCase):
         self.assertIn("本期论文精读聚焦 Nature 论文《Evo 2》", runtime)
         self.assertIn("This paper reading focuses on the Nature paper Evo 2", runtime)
 
+    def test_pages_use_the_shared_footer_with_external_links(self):
+        runtime = (ROOT / "i18n.js").read_text(encoding="utf-8")
+        self.assertIn('linksTitle: "Friendly links"', runtime)
+        self.assertIn('linksTitle: "友情链接"', runtime)
+        corpus = "\n".join((ROOT / page).read_text(encoding="utf-8") for page in PAGES)
+        self.assertIn("https://cogskl.iflytek.com/", corpus)
+        self.assertIn("https://www.ustc.edu.cn/", corpus)
+        for page_name in PAGES:
+            content = (ROOT / page_name).read_text(encoding="utf-8")
+            self.assertIn('class="site-footer"', content, page_name)
+            self.assertIn('class="footer-links"', content, page_name)
+            self.assertIn('target="_blank"', content, page_name)
+
 
 if __name__ == "__main__":
     unittest.main()
