@@ -8,15 +8,15 @@
     {
       group: "leadership",
       name: "Enhong Chen",
-      role: "Chair Professor · Doctoral Supervisor",
+      role: "Professor · Doctoral Supervisor",
       institution: "University of Science and Technology of China",
       image: "assets/avatars/chen-enhong.jpg",
-      bio: "Chair Professor and doctoral supervisor at USTC, Deputy Director of the State Key Laboratory of Cognitive Intelligence, and an IEEE, CCF, and CAAI Fellow. His research spans data mining, machine learning, personalized recommendation, and intelligent education."
+      bio: "Professor and doctoral supervisor at USTC, Deputy Director of the State Key Laboratory of Cognitive Intelligence, and an IEEE, CCF, and CAAI Fellow. His research spans data mining, machine learning, personalized recommendation, and intelligent education."
     },
     {
       group: "leadership",
       name: "Kai Zhang",
-      role: "Specially Appointed Associate Researcher",
+      role: "Associate Researcher",
       institution: "University of Science and Technology of China",
       image: "assets/avatars/kai-zhang.jpg",
       bio: "His research interests include artificial intelligence, natural language processing, large language models, knowledge representation, reasoning, computational biology, and intelligent omics."
