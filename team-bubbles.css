@@ -1,22 +1,29 @@
-.team-people{margin-top:64px}
+.team-people{margin-top:48px}
 .team-people .content-block-head{gap:28px}
 .team-people .content-block-head h2{font-size:32px}
 .team-stage{border-top:1px solid var(--line)}
-.team-field{padding:38px 0 44px;border-bottom:1px solid var(--line)}
-.team-field>h3{margin:0 0 28px;color:var(--green);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.team-bubble-row{display:grid;gap:24px;justify-content:center}
-.team-leadership .team-bubble-row{grid-template-columns:repeat(2,minmax(300px,380px))}
-.team-members .team-bubble-row{grid-template-columns:repeat(3,minmax(220px,270px))}
-.team-collaborators .team-bubble-row{grid-template-columns:repeat(2,minmax(250px,320px))}
-.person-bubble{height:100%;padding:26px 22px 24px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:15px}
-.person-bubble .portrait{display:block;width:132px;aspect-ratio:1;margin:0 auto;padding:4px;border:1px solid color-mix(in srgb,var(--green) 48%,white);border-radius:50%;background:#fff}
-.person-bubble img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-.person-bubble h4{margin:15px 0 0;font-family:Fraunces,Georgia,serif;font-size:21px;font-weight:600;line-height:1.25}
-.person-meta{margin:6px 0 0;color:var(--teal);font-size:11px;line-height:1.45}
-.person-institution{margin:7px auto 0;max-width:30ch;color:var(--muted);font-size:11px;line-height:1.5}
-.person-leadership{padding:30px 30px 28px}
-.person-leadership .portrait{width:150px;border-color:color-mix(in srgb,#e46045 72%,white)}
+.team-field{padding:30px 0 36px;border-bottom:1px solid var(--line)}
+.team-field>h3{margin:0 0 22px;color:var(--green);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.team-bubble-row{display:grid;gap:18px;justify-content:center}
+.team-leadership .team-bubble-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+.team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:repeat(4,minmax(0,1fr))}
+.person-bubble{--card-accent:var(--teal);display:flex;min-width:0;flex-direction:column;overflow:hidden;background:#fff;border:1px solid var(--line);border-top:4px solid var(--card-accent);border-radius:var(--card-radius);transition:transform .18s,box-shadow .18s}
+.person-bubble:hover{transform:translateY(-3px);box-shadow:var(--card-shadow)}
+.person-bubble .portrait{position:relative;display:block;width:100%;aspect-ratio:1;overflow:hidden;background:linear-gradient(145deg,#edf6f2,#f8fbfa);border-bottom:1px solid var(--line)}
+.person-bubble img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .35s ease}
+.person-bubble:hover .portrait img{transform:scale(1.025)}
+.person-bubble-body{padding:var(--card-pad-y) var(--card-pad-x) 22px;text-align:left}
+.person-bubble h4{margin:0;font-family:Fraunces,Georgia,serif;font-size:var(--card-title-size);font-weight:500;line-height:1.35}
+.person-meta{margin:6px 0 0;color:var(--teal);font-size:var(--card-label-size);font-weight:600;line-height:1.45}
+.person-institution{margin:7px 0 0;max-width:30ch;color:var(--muted);font-size:12px;line-height:1.55}
+.person-leadership{--card-accent:var(--primary);display:grid;grid-template-columns:minmax(210px,42%) minmax(0,1fr)}
+.person-leadership .portrait{height:100%;min-height:300px;aspect-ratio:auto}
+.person-leadership .portrait img{object-position:center top}
+.person-leadership .person-bubble-body{display:flex;flex-direction:column;justify-content:center;padding:26px 28px;text-align:left}
 .person-leadership h4{font-size:24px}
-.person-bio{margin:18px auto 0;padding-top:17px;color:var(--muted);border-top:1px solid var(--line);font-size:12px;line-height:1.65;text-align:left}
-@media(max-width:920px){.team-members .team-bubble-row{grid-template-columns:repeat(2,minmax(220px,280px))}}
-@media(max-width:680px){.team-people{margin-top:48px}.team-people .content-block-head{display:block}.team-people .content-block-head p{margin-top:12px}.team-field{padding:30px 0 34px}.team-leadership .team-bubble-row,.team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:1fr}.person-bubble,.person-leadership{padding:23px 18px}.person-bubble .portrait,.person-leadership .portrait{width:118px}.person-bubble h4,.person-leadership h4{font-size:20px}}
+.person-leadership .person-institution{margin-right:0;margin-left:0}
+.person-bio{margin:16px 0 0;padding-top:15px;color:var(--muted);border-top:1px solid var(--line);font-size:12px;line-height:1.65;text-align:left}
+.person-collaborator{--card-accent:var(--accent)}
+@media(max-width:920px){.team-leadership .team-bubble-row{grid-template-columns:1fr}.team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:repeat(2,minmax(220px,280px))}}
+@media(max-width:680px){.team-people{margin-top:40px}.team-people .content-block-head{display:block}.team-people .content-block-head p{margin-top:12px}.team-field{padding:26px 0 30px}.team-leadership .team-bubble-row,.team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:1fr}.person-bubble:not(.person-leadership){display:grid;grid-template-columns:124px minmax(0,1fr)}.person-bubble:not(.person-leadership) .portrait{height:100%;min-height:124px;aspect-ratio:auto}.person-bubble-body{display:flex;flex-direction:column;justify-content:center;padding:18px;text-align:left}.person-institution{margin-right:0;margin-left:0}.person-leadership{display:flex}.person-leadership .portrait{height:auto;min-height:0;aspect-ratio:4/3}.person-leadership .person-bubble-body{padding:22px 20px 24px}.person-bubble h4,.person-leadership h4{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.person-bubble,.person-bubble img{transition:none}.person-bubble:hover{transform:none}.person-bubble:hover .portrait img{transform:none}}

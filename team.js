@@ -95,7 +95,7 @@
 
   function card(person) {
     const bio = person.bio ? `<p class="person-bio">${person.bio}</p>` : "";
-    return `<article class="person-bubble person-${person.group}"><span class="portrait"><img src="${person.image}" alt="${person.name}"></span><h4>${person.name}</h4><p class="person-meta">${person.role}</p><p class="person-institution">${person.institution}</p>${bio}</article>`;
+    return `<article class="person-bubble person-${person.group}"><span class="portrait"><img src="${person.image}" alt="${person.name}" loading="lazy" decoding="async"></span><div class="person-bubble-body"><h4>${person.name}</h4><p class="person-meta">${person.role}</p><p class="person-institution">${person.institution}</p>${bio}</div></article>`;
   }
 
   ["leadership", "member", "collaborator"].forEach((group) => {

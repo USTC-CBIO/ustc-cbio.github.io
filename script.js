@@ -15,7 +15,7 @@ function showSlide(index) {
 }
 
 if (slides.length) showSlide(0);
-if (slides.length > 1) {
+if (slides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   window.setInterval(() => {
     slide = (slide + 1) % slides.length;
     showSlide(slide);
@@ -28,13 +28,24 @@ if (menuButton && navigation) {
   menuButton.addEventListener("click", () => {
     const open = navigation.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   });
 
   navigation.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       navigation.classList.remove("open");
       menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open menu");
     });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navigation.classList.contains("open")) {
+      navigation.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open menu");
+      menuButton.focus();
+    }
   });
 }
 
