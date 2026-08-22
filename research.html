@@ -3,48 +3,45 @@
 <title>Research | CBIO Lab</title><link rel="icon" href="assets/cbio-lab-favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260818"><script src="i18n.js" defer></script><script src="script.js" defer></script></head><body data-page="research">
-<header class="site-header"><div class="header-inner"><a class="logo" href="index.html" aria-label="CBIO Lab home" data-i18n="common.logo.homeAriaLabel" data-i18n-attr="aria-label"><span class="logo-image" role="img" aria-label="CBIO Lab" data-i18n="common.logo.imageAriaLabel" data-i18n-attr="aria-label"></span></a><button class="menu-button" aria-label="Open menu" aria-expanded="false" data-i18n="common.menu.openAriaLabel" data-i18n-attr="aria-label"><span></span><span></span><span></span></button>
-<nav class="main-nav" aria-label="Main navigation" data-i18n="common.navigation.ariaLabel" data-i18n-attr="aria-label"><a href="index.html" data-i18n="common.nav.home">Home</a><a class="active" href="research.html" data-i18n="common.nav.research">Research</a><a href="team.html" data-i18n="common.nav.team">Team</a><a href="publications.html" data-i18n="common.nav.publications">Publications</a><a href="data-code.html" data-i18n="common.nav.dataCode">Data &amp; Code</a><a href="news.html" data-i18n="common.nav.news">News</a><a href="media.html" data-i18n="common.nav.media">Media</a><a href="contact.html" data-i18n="common.nav.contact">Contact</a></nav></div></header>
-<main class="page-shell inner-content"><section class="inner-hero compact" style="--page-image:url('assets/single-cell-omics-hero-v2.webp')"><div><div class="eyebrow" data-i18n="research.hero.eyebrow">CBIO LAB · RESEARCH</div><h1 data-i18n="research.hero.title">Artificial intelligence for spatial omics.</h1><p data-i18n="research.hero.body">We develop generative and representation-learning methods that expand what spatial omics can measure, reconstruct, and reveal.</p></div></section>
-<section class="intro-row"><h2 data-i18n="research.approach.heading">Our approach</h2><p data-i18n="research.approach.body">Spatial transcriptomics preserves molecular measurements in their tissue context, but current technologies remain limited by gene coverage, two-dimensional sampling, and experimental cost. We use machine learning to enhance gene expression, recover continuous three-dimensional organization, and infer spatial transcriptomics from routine histology.</p></section>
-<section class="feature-list">
-<article class="feature-card"><span class="number">01</span><h3 data-i18n="research.directions.enhancementTitle">Spatial gene enhancement</h3><p data-i18n="research.directions.enhancementBody">stPainter uses pan-cancer single-cell pretraining and latent diffusion to impute unmeasured genes without matched reference tissue.</p></article>
-<article class="feature-card"><span class="number">02</span><h3 data-i18n="research.directions.true3dTitle">True 3D spatial omics</h3><p data-i18n="research.directions.true3dBody">DeepSpatial combines optimal transport, flow matching, and gene transformers to reconstruct continuous tissue from serial sections.</p></article>
-<article class="feature-card"><span class="number">03</span><h3 data-i18n="research.directions.histologyTitle">Histology-to-ST inference</h3><p data-i18n="research.directions.histologyBody">DriftST uses one-step generative modeling and co-expression attention to predict spatial transcriptomics from H&amp;E images.</p></article>
+<link rel="stylesheet" href="styles.css?v=20260824"><script src="script.js?v=20260824" defer></script></head><body data-page="research">
+<header class="site-header"><div class="header-inner"><a class="logo" href="index.html" aria-label="CBIO Lab home"><span class="logo-image" role="img" aria-label="CBIO Lab"></span></a><button class="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="team.html">Team</a><a href="publications.html">Publications</a><a href="data-code.html">Data &amp; Code</a><a href="news.html">News</a><a href="media.html">Media</a><a href="contact.html">Contact</a></nav></div></header>
+<main class="page-shell inner-content"><section class="inner-hero compact" style="--page-image:url('assets/single-cell-omics-hero-v2.webp')"><div><div class="eyebrow">CBIO LAB · RESEARCH</div><h1>Artificial intelligence for spatial omics.</h1><p>We develop generative and representation-learning methods that expand what spatial omics can measure, reconstruct, and reveal.</p></div></section>
+<section class="intro-row"><h2>Our approach</h2><p>Biological omics is rich but incomplete: measurements can be sparse, tissue is often observed only in two dimensions, and high-throughput assays remain expensive. We combine biological priors, generative learning, and multimodal representation learning to recover missing information while preserving cell identity and tissue context.</p></section>
+<div class="research-pipeline" aria-label="Research workflow"><span>Define the biological question</span><span>Measure cells and tissues</span><span>Learn structure across modalities</span><span>Validate biological insight</span></div>
+<section class="research-areas" aria-label="Research areas">
+<article class="research-area"><div class="research-area-index"><span>01</span><small>Measurement enhancement</small></div><div class="research-area-copy"><h2>Recovering informative gene expression</h2><p>Subcellular spatial assays capture cellular architecture but measure only sparse gene panels. We use large single-cell atlases as transferable priors to reconstruct genome-wide expression, denoise observations, and improve cell-state discovery without requiring a matched reference for every tissue.</p></div><div class="research-area-project"><small>Representative work</small><strong>stPainter</strong></div></article>
+<article class="research-area"><div class="research-area-index"><span>02</span><small>Continuous reconstruction</small></div><div class="research-area-copy"><h2>Rebuilding tissue in true three dimensions</h2><p>Physical sectioning destroys the continuity between adjacent slices. We model tissue evolution as a continuous vector field, align transcriptomic and proteomic sections, and generate cellular states at arbitrary depth to recover spatial domains and microenvironments in three dimensions.</p></div><div class="research-area-project"><small>Representative work</small><strong>DeepSpatial</strong></div></article>
+<article class="research-area"><div class="research-area-index"><span>03</span><small>Cross-modal inference</small></div><div class="research-area-copy"><h2>Reading molecular states from histology</h2><p>Routine H&amp;E slides are abundant, while spatial transcriptomics is costly. We develop efficient generative models that learn co-expression structure and infer spatially resolved gene distributions from morphology at both spot and single-cell resolution.</p></div><div class="research-area-project"><small>Representative work</small><strong>DriftST</strong></div></article>
+<article class="research-area"><div class="research-area-index"><span>04</span><small>Intelligent omics</small></div><div class="research-area-copy"><h2>General models for biological omics</h2><p>We extend these ideas toward multimodal biological foundation models that connect single-cell profiles, spatial measurements, pathology, and prior knowledge. The emphasis is on models that generalize across tissues, platforms, resolutions, and biological questions.</p></div><div class="research-area-project"><small>Current focus</small><strong>Multimodal learning</strong></div></article>
 </section>
-<section class="content-block"><div class="content-block-head"><h2 data-i18n="research.future.heading">Future directions</h2><p data-i18n="research.future.body">Our next projects extend spatial omics through multimodal learning, benchmark development, and richer tissue modeling.</p></div><div class="wide-list">
-<article class="wide-item"><span class="meta" data-i18n="research.future.multimodalMeta">Multimodal learning</span><h3 data-i18n="research.future.multimodalTitle">Aligning spatial omics with histology and other molecular modalities</h3><a href="#" aria-label="Open future direction" data-i18n-attr="aria-label:research.future.openAriaLabel">↗</a></article>
-<article class="wide-item"><span class="meta" data-i18n="research.future.multiomicsMeta">Spatial multi-omics</span><h3 data-i18n="research.future.multiomicsTitle">Fusing complementary omics measurements in a shared tissue context</h3><a href="#" aria-label="Open future direction" data-i18n-attr="aria-label:research.future.openAriaLabel">↗</a></article>
-<article class="wide-item"><span class="meta" data-i18n="research.future.benchmarksMeta">Benchmarks</span><h3 data-i18n="research.future.benchmarksTitle">Evaluating histology-to-ST prediction, cell segmentation, and multi-slice alignment</h3><a href="#" aria-label="Open future direction" data-i18n-attr="aria-label:research.future.openAriaLabel">↗</a></article>
-<article class="wide-item"><span class="meta" data-i18n="research.future.spatiotemporalMeta">Spatiotemporal biology</span><h3 data-i18n="research.future.spatiotemporalTitle">Modeling tissue microenvironments across space and time</h3><a href="#" aria-label="Open future direction" data-i18n-attr="aria-label:research.future.openAriaLabel">↗</a></article>
-</div></section></main>
+<section class="content-block"><div class="content-block-head"><h2>How we work</h2><p>Three principles guide model development and evaluation across our projects.</p></div><div class="research-principles"><article><h3>Biological grounding</h3><p>Start from a meaningful biological limitation and validate predictions with independent molecular or spatial evidence.</p></article><article><h3>Generalization</h3><p>Test across tissues, disease contexts, platforms, and resolutions instead of optimizing for a single benchmark.</p></article><article><h3>Open and reproducible</h3><p>Release code, models, documentation, and evaluation resources so results can be examined and extended.</p></article></div></section></main>
 <footer class="site-footer">
   <div class="site-footer-inner">
     <div class="site-footer-grid">
       <div class="footer-brand">
-        <a class="footer-brand-logo" href="index.html" aria-label="CBIO Lab home" data-i18n="common.logo.homeAriaLabel" data-i18n-attr="aria-label">
-          <img class="footer-logo" src="assets/cbio-lab-logo.png" alt="CBIO Lab" data-i18n="common.logo.imageAriaLabel" data-i18n-attr="alt">
+        <a class="footer-brand-logo" href="index.html" aria-label="CBIO Lab home">
+          <img class="footer-logo" src="assets/cbio-lab-logo.png" alt="CBIO Lab">
         </a>
       </div>
       <div class="footer-column">
-        <h2 data-i18n="common.footer.exploreTitle">Explore</h2>
-        <nav class="footer-nav" aria-label="Explore" data-i18n="common.footer.exploreTitle" data-i18n-attr="aria-label:common.footer.exploreTitle">
-          <a href="research.html" data-i18n="common.nav.research">Research</a>
-          <a href="team.html" data-i18n="common.nav.team">Team</a>
-          <a href="publications.html" data-i18n="common.nav.publications">Publications</a>
-          <a href="media.html" data-i18n="common.nav.media">Media</a>
+        <h2>Explore</h2>
+        <nav class="footer-nav" aria-label="Explore">
+          <a href="research.html">Research</a>
+          <a href="team.html">Team</a>
+          <a href="publications.html">Publications</a>
+          <a href="media.html">Media</a>
         </nav>
       </div>
       <div class="footer-column">
-        <h2 data-i18n="common.footer.linksTitle">Friendly links</h2>
-        <nav class="footer-links" aria-label="Friendly links" data-i18n="common.footer.linksAriaLabel" data-i18n-attr="aria-label:common.footer.linksAriaLabel">
+        <h2>Friendly links</h2>
+        <nav class="footer-links" aria-label="Friendly links">
           <a class="footer-link" href="https://cogskl.iflytek.com/" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="common.footer.cogskl">National Key Laboratory of Cognitive Intelligence</span>
+            <span>National Key Laboratory of Cognitive Intelligence</span>
             <svg class="footer-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg>
           </a>
           <a class="footer-link" href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="common.footer.ustc">University of Science and Technology of China</span>
+            <span>University of Science and Technology of China</span>
             <svg class="footer-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg>
           </a>
         </nav>
@@ -52,7 +49,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span data-year></span> CBIO Lab</span>
-      <span data-i18n="common.footer.note">Built around meaningful biological questions.</span>
+      <span>Computational Biology and Intelligent Omics</span>
     </div>
   </div>
 </footer>
