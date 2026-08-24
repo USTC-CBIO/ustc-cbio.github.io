@@ -56,12 +56,25 @@ class EnglishSiteContractTests(unittest.TestCase):
         self.assertIn('class="person-institution"', runtime)
         self.assertNotIn('class="person-bio"', runtime)
 
-    def test_academic_leadership_order_and_qi_liu_profile(self):
+    def test_academic_leadership_order_and_portraits(self):
         runtime = (ROOT / "team.js").read_text(encoding="utf-8")
         styles = (ROOT / "team-bubbles.css").read_text(encoding="utf-8")
         leaders = [runtime.index(f'name: "{name}"') for name in ("Kai Zhang", "Qi Liu", "Enhong Chen")]
         self.assertEqual(leaders, sorted(leaders))
-        self.assertIn('image: "assets/avatars/qi-liu.jpg"', runtime)
+        portraits = {
+            "Kai Zhang": "assets/avatars/kai-zhang.png",
+            "Qi Liu": "assets/avatars/qi-liu.png",
+            "Enhong Chen": "assets/avatars/chen-enhong.png",
+        }
+        for name, portrait in portraits.items():
+            profile = re.search(
+                rf'name: "{re.escape(name)}".*?image: "([^"]+)"',
+                runtime,
+                re.DOTALL,
+            )
+            self.assertIsNotNone(profile, name)
+            self.assertEqual(profile.group(1), portrait, name)
+            self.assertTrue((ROOT / portrait).is_file(), portrait)
         self.assertIn('role: "Professor · Doctoral Supervisor"', runtime)
         self.assertIn(".team-leadership .team-bubble-row{grid-template-columns:repeat(3,minmax(0,1fr))}", styles)
         self.assertIn(".team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:repeat(3,minmax(0,1fr))}", styles)

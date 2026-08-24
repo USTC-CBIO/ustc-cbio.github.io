@@ -10,21 +10,21 @@
       name: "Kai Zhang",
       role: "Associate Researcher",
       institution: "University of Science and Technology of China",
-      image: "assets/avatars/kai-zhang.jpg"
+      image: "assets/avatars/kai-zhang.png"
     },
     {
       group: "leadership",
       name: "Qi Liu",
       role: "Professor · Doctoral Supervisor",
       institution: "University of Science and Technology of China",
-      image: "assets/avatars/qi-liu.jpg"
+      image: "assets/avatars/qi-liu.png"
     },
     {
       group: "leadership",
       name: "Enhong Chen",
       role: "Professor · Doctoral Supervisor",
       institution: "University of Science and Technology of China",
-      image: "assets/avatars/chen-enhong.jpg"
+      image: "assets/avatars/chen-enhong.png"
     },
     {
       group: "member",
