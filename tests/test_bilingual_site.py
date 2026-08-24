@@ -54,7 +54,18 @@ class EnglishSiteContractTests(unittest.TestCase):
         self.assertIn('role: "Direct PhD Student · Class of 2026"', runtime)
         self.assertIn('institution: "Peking University Cancer Hospital"', runtime)
         self.assertIn('class="person-institution"', runtime)
-        self.assertIn('class="person-bio"', runtime)
+        self.assertNotIn('class="person-bio"', runtime)
+
+    def test_academic_leadership_order_and_qi_liu_profile(self):
+        runtime = (ROOT / "team.js").read_text(encoding="utf-8")
+        styles = (ROOT / "team-bubbles.css").read_text(encoding="utf-8")
+        leaders = [runtime.index(f'name: "{name}"') for name in ("Kai Zhang", "Qi Liu", "Enhong Chen")]
+        self.assertEqual(leaders, sorted(leaders))
+        self.assertIn('image: "assets/avatars/qi-liu.jpg"', runtime)
+        self.assertIn('role: "Professor · Doctoral Supervisor"', runtime)
+        self.assertIn(".team-leadership .team-bubble-row{grid-template-columns:repeat(3,minmax(0,1fr))}", styles)
+        self.assertIn(".team-members .team-bubble-row,.team-collaborators .team-bubble-row{grid-template-columns:repeat(3,minmax(0,1fr))}", styles)
+        self.assertIn(".person-bubble img{display:block;width:100%;height:100%;object-fit:contain", styles)
 
     def test_data_code_has_resources_without_paper_buttons(self):
         content = (ROOT / "data-code.html").read_text(encoding="utf-8")

@@ -7,19 +7,24 @@
   const people = [
     {
       group: "leadership",
-      name: "Enhong Chen",
-      role: "Professor · Doctoral Supervisor",
-      institution: "University of Science and Technology of China",
-      image: "assets/avatars/chen-enhong.jpg",
-      bio: "Professor and doctoral supervisor at USTC, Deputy Director of the State Key Laboratory of Cognitive Intelligence, and an IEEE, CCF, and CAAI Fellow. His research spans data mining, machine learning, personalized recommendation, and intelligent education."
-    },
-    {
-      group: "leadership",
       name: "Kai Zhang",
       role: "Associate Researcher",
       institution: "University of Science and Technology of China",
-      image: "assets/avatars/kai-zhang.jpg",
-      bio: "His research interests include artificial intelligence, natural language processing, large language models, knowledge representation, reasoning, computational biology, and intelligent omics."
+      image: "assets/avatars/kai-zhang.jpg"
+    },
+    {
+      group: "leadership",
+      name: "Qi Liu",
+      role: "Professor · Doctoral Supervisor",
+      institution: "University of Science and Technology of China",
+      image: "assets/avatars/qi-liu.jpg"
+    },
+    {
+      group: "leadership",
+      name: "Enhong Chen",
+      role: "Professor · Doctoral Supervisor",
+      institution: "University of Science and Technology of China",
+      image: "assets/avatars/chen-enhong.jpg"
     },
     {
       group: "member",
@@ -94,8 +99,7 @@
   ];
 
   function card(person) {
-    const bio = person.bio ? `<p class="person-bio">${person.bio}</p>` : "";
-    return `<article class="person-bubble person-${person.group}"><span class="portrait"><img src="${person.image}" alt="${person.name}" loading="lazy" decoding="async"></span><div class="person-bubble-body"><h4>${person.name}</h4><p class="person-meta">${person.role}</p><p class="person-institution">${person.institution}</p>${bio}</div></article>`;
+    return `<article class="person-bubble person-${person.group}"><span class="portrait"><img src="${person.image}" alt="${person.name}" loading="lazy" decoding="async"></span><div class="person-bubble-body"><h4>${person.name}</h4><p class="person-meta">${person.role}</p><p class="person-institution">${person.institution}</p></div></article>`;
   }
 
   ["leadership", "member", "collaborator"].forEach((group) => {
