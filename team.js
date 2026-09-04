@@ -42,6 +42,13 @@
     },
     {
       group: "member",
+      name: "Shuqing Hao",
+      role: "Undergraduate · Class of 2023",
+      institution: "University of Science and Technology of China",
+      image: "assets/avatars/shuqing-hao.jpg"
+    },
+    {
+      group: "member",
       name: "Yonggan Bu",
       role: "Undergraduate · Class of 2024",
       institution: "University of Science and Technology of China",
@@ -77,24 +84,24 @@
     },
     {
       group: "collaborator",
-      name: "Pengfei Guan",
-      role: "Undergraduate · Class of 2024",
+      name: "Keyan Wang",
+      role: "Direct PhD Student · Class of 2026",
       institution: "Peking University Cancer Hospital",
-      image: "assets/avatars/pengfei-guan.png"
+      image: "assets/avatars/keyan-wang.png"
     },
     {
       group: "collaborator",
       name: "Shengyuan Zhou",
-      role: "Undergraduate · Class of 2024",
+      role: "Undergraduate · Class of 2022",
       institution: "Peking University Cancer Hospital",
       image: "assets/avatars/shengyuan-zhou.png"
     },
     {
       group: "collaborator",
-      name: "Keyan Wang",
-      role: "Direct PhD Student · Class of 2026",
+      name: "Pengfei Guan",
+      role: "Undergraduate · Class of 2024",
       institution: "Peking University Cancer Hospital",
-      image: "assets/avatars/keyan-wang.png"
+      image: "assets/avatars/pengfei-guan.png"
     }
   ];
 
