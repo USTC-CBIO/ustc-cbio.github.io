@@ -31,7 +31,7 @@
       name: "Yuhang Yang",
       role: "MSc Student · Class of 2025",
       institution: "University of Science and Technology of China",
-      image: "assets/avatars/yuhang-yang.jpg"
+      image: "assets/avatars/yuhang-yang.jpg?v=20261123-2"
     },
     {
       group: "member",
@@ -87,7 +87,7 @@
       name: "Keyan Wang",
       role: "Direct PhD Student · Class of 2026",
       institution: "Peking University Cancer Hospital",
-      image: "assets/avatars/keyan-wang.png"
+      image: "assets/avatars/keyan-wang.jpg"
     },
     {
       group: "collaborator",
@@ -101,7 +101,7 @@
       name: "Pengfei Guan",
       role: "Undergraduate · Class of 2024",
       institution: "Peking University Cancer Hospital",
-      image: "assets/avatars/pengfei-guan.png"
+      image: "assets/avatars/pengfei-guan.jpg"
     }
   ];
 
