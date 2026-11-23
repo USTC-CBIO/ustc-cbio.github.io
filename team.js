@@ -42,13 +42,6 @@
     },
     {
       group: "member",
-      name: "Shuqing Hao",
-      role: "Undergraduate · Class of 2023",
-      institution: "University of Science and Technology of China",
-      image: "assets/avatars/shuqing-hao.jpg"
-    },
-    {
-      group: "member",
       name: "Yonggan Bu",
       role: "Undergraduate · Class of 2024",
       institution: "University of Science and Technology of China",
@@ -74,6 +67,13 @@
       role: "Undergraduate · Class of 2024",
       institution: "University of Science and Technology of China",
       image: "assets/avatars/junyu-li.jpg"
+    },
+    {
+      group: "member",
+      name: "Yunhan Wang",
+      role: "Undergraduate · Class of 2025",
+      institution: "University of Science and Technology of China",
+      image: "assets/avatars/yunhan-wang.jpg"
     },
     {
       group: "collaborator",
